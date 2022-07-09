@@ -1,0 +1,95 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #e2dbdb;
+  animation-name: h1;
+  animation: h1 3s linear infinite;
+}
+
+@keyframes h1 {
+  0%  {color: lightblue;}
+  25% {color: royalblue;}
+  50% {color: black;}
+  75% {color: deepskyblue;}
+  100%  {color: blue;}
+}
+
+
+hr {
+  margin: 20px auto;
+  color: #f05f44;
+  border: 3px solid #f05f44;
+  max-width: 65px;
+  opacity: 1;
+}
+
+.buffer {
+  height: 12rem;
+}
+
+.btn {
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+}
+
+.btn-outline-light {
+  background-color: #f05f44;
+  border-color: #f05f44;
+  transition: all 1s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 4px;
+  font-weight: bold;
+  font-size: large;
+  color: #ee4b08;
+  transform: scale(1.1);
+}
+
+.btn-outline-light:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 5px #ee4b08;
+  transition: 600ms;
+}
+
+.btn-outline-light:active {
+  opacity: 0%;
+}
+
+.btn-outline-light:after {
+  content: 'Lets Go!';
+  left: 66px;
+  position: absolute;
+  opacity: 0%;
+}
+
+.btn-outline-light:hover:after {
+  content: 'Lets Go!';
+  left: 66px;
+  position: absolute;
+  opacity: 100%;
+  color: white;
+  transform: scale(1.3);
+  transition: all 2.5s ease;
+}
+
+
+.btn-xl {
+  padding: 1rem 2rem;
+
+}
